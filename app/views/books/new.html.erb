@@ -3,9 +3,9 @@
  <% if@book.errors.any? %>
   <%= @book.errors.count %> errors prohibited this book from being saved:
   <ul>
-   <%= @book.errors.full_messages.ea do |message| %>
+   <%= @book.errors.full_messages.each do |message| %>
     <li><%= message %></li>
-  <% end %>
+  <% end %>ch
   </ul>
  <% end %>
 
